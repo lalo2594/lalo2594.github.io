@@ -1,10 +1,22 @@
-var figura = new THREE.Shape();
+var caballo = new THREE.Shape();
 
-figura.moveTo(10, 10);
-figura.lineTo(10, 40);
-figura.lineTo(40, 40);
-figura.lineTo(10, 10);
-var forma = new THREE.ExtrudeGeometry( figura, {amount: 10} );
+caballo.moveTo(2, 1);
+caballo.lineTo(1.5, 2.5);
+caballo.lineTo(0.5, 3);
+caballo.lineTo(0, 4);
+caballo.lineTo(-0.5, 3);
+caballo.lineTo(-1.5, 2);
+caballo.lineTo(-2.5, 2);
+caballo.lineTo(-2, 1.5);
+caballo.lineTo(-2.5, 1);
+caballo.lineTo(-1.5, 1);
+caballo.lineTo(0.5, 0.5);
+caballo.lineTo(1, -1);
+caballo.lineTo(1, -2);
+caballo.lineTo(3, -2);
+caballo.lineTo(3, -1);
+caballo.lineTo(2, 1);
+var forma = new THREE.ExtrudeGeometry( caballo, {amount: 10} );
 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
 malla.rotateY( Math.PI/4 );
