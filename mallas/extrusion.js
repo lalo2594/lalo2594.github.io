@@ -19,12 +19,12 @@ caballo.lineTo(2, 1);
 var forma = new THREE.ExtrudeGeometry( caballo, {amount: 10} );
 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( forma, material );
-malla.rotateY( Math.PI/4 );
+//malla.rotateY( Math.PI/4 );
 var escena = new THREE.Scene();
 escena.add(malla);
 
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 500;
+camara.position.z = 70;
 
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95,
