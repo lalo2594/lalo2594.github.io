@@ -5,8 +5,8 @@ var material= new THREE.MeshBasicMaterial({map:textura});
 var forma= new THREE.BoxGeometry(1,4,9);
 malla= new THREE.Mesh(forma, material);
 
-var luzPuntual = new THREE.PointLight( 0xFFFFFF);
-luzPuntual.position.set( 10, 10, 10 );
+var luzPun = new THREE.PointLight( 0xFFFFFF);
+luzPun.position.set( 10, 10, 10 );
 
 escena=new THREE.Scene();
 escena.add(malla);
