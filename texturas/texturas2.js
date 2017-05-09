@@ -10,7 +10,7 @@ luzPun.position.set( 10, 10, 10 );
 
 escena=new THREE.Scene();
 escena.add(malla);
-escena.add(LuzPuntual);
+escena.add(luzPun);
 camara=new THREE.PerspectiveCamera();
 camara.position.z=10;
 renderer=new THREE.WebGLRenderer();
